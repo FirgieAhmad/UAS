@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+// NAMA : Firgie Ahmad -- NIM : ETE10190123
+using namespace std;
+
+int main (){
+	//ini adalah statement
+	float totalPembelian, diskon, totalDiskon;
+	cout << "masukkan total pembelian : ";
+	cin >> totalPembelian;
+	cout << "total pembelian anda adalah : " << totalPembelian;
+	if (totalPembelian > 500000)
+	{
+		diskon = 0.1;
+	}
+	else
+	{
+		diskon = 0;
+	}
+	
+	totalPembelian = totalPembelian - totalDiskon;
+	
+	totalDiskon = diskon * totalPembelian;
+	cout << endl << "totalDiskon adalah : ";
+	cout << totalDiskon;
+	
+	totalPembelian = totalPembelian - totalDiskon;
+	cout << endl << "TOTAL PEMBELIAN : ";
+	cout << totalPembelian;
+	return 0;
+}
